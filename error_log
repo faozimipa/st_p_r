@@ -1,0 +1,9 @@
+[27-Sep-2016 02:37:39 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/statistikastarco/public_html/db_connect.php on line 6
+[27-Sep-2016 02:37:39 UTC] PHP Warning:  mysql_connect(): Access denied for user 'statistikastarco_stat'@'localhost' (using password: YES) in /home/statistikastarco/public_html/db_connect.php on line 6
+[27-Sep-2016 02:38:57 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/statistikastarco/public_html/db_connect.php on line 6
+[27-Sep-2016 02:38:57 UTC] PHP Warning:  mysql_connect(): Access denied for user 'statistikastarco_stat'@'localhost' (using password: YES) in /home/statistikastarco/public_html/db_connect.php on line 6
+[27-Sep-2016 02:40:23 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/statistikastarco/public_html/db_connect.php on line 6
+[27-Sep-2016 02:40:26 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/statistikastarco/public_html/db_connect.php on line 6
+[27-Sep-2016 02:44:11 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/statistikastarco/public_html/db_connect.php on line 6
+[18-Oct-2016 05:11:15 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/statistikastarco/public_html/db_connect.php on line 6
+[21-Oct-2016 02:15:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/statistikastarco/public_html/db_connect.php on line 6
