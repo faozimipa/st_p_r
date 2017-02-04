@@ -20,6 +20,14 @@ if(isset($_POST)){
     $level = 'user';
     $is_aktif = 0;
 
+    $cek = mysql_query("SELECT * from user WHERE username='$username'");
+
+    if(sizeof($cek) > 0){
+        echo "<script> alert('Username inisudah digunakan');
+                 document.location='$location';
+                </script>";
+    }
+
     $query= mysql_query ("INSERT INTO user(username,password,level,nama,is_aktif,jenis_kelamin,asal,email)
     VALUES ('$username', '$password', '$level','$nama','$is_aktif','$jenis_kelamin','$asal','$email')",$connection)or die (mysql_error());
 
@@ -27,7 +35,7 @@ if(isset($_POST)){
         echo "<script>
                 alert('Pendaftaran berhasil. Tianggal menunggu ACC Admin');
 
-                document.location='m/index.php';
+                document.location='/m/index.php';
               </script>";
 
     }else{
