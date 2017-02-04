@@ -23,7 +23,7 @@ if(isset($_POST)){
     $cek = mysql_query("SELECT * from user WHERE username='$username'");
 
     if(sizeof($cek) > 0){
-        echo "<script> alert('Username inisudah digunakan');
+        echo "<script> alert('Username ini sudah digunakan');
                  document.location='$location';
                 </script>";
     }

@@ -1,10 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-				<div class="entry">
-				<br>
-				<div class="entry-title">Input 2 Sampel</div><br>
-			<form method='post' action='insert_data3.php'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<?php include('common/header.php') ?>
+</head>
+<body>
+<div class="container">
+	<?php if(isset($_SESSION['login'])){ ?>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			Input 2 Sampel
+		</div>
+		<div class="panel-body">
+			<form method='post' action='/m/insert_data3.php'>
 		<?php
 	$nama = $_POST['nama'];		
 	$n = $_POST['n'];	
@@ -16,7 +23,11 @@
 	echo "<tr> <td><input type='hidden' name='nama' value='".$nama."' /></td></tr>";
 	echo "</table>";
 	echo "<tr> <td><input type='submit' name='submit' value='Simpan data' /></td></tr>";	?></form>
-			<br>
-			<br>
-			</div>
-</html>
+
+		</div>
+	</div>
+	<?php }else{ ?>
+		<?php include('auth/login.php');?>
+	<?php } ?>
+</div>
+</body>

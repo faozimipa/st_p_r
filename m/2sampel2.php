@@ -1,10 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<?php include('common/header.php') ?>
+</head>
+<body>
+<div class="container">
+	<?php if(isset($_SESSION['login'])){ ?>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			Input Data Dua Variabel Tak Berpasangan
+		</div>
+		<div class="panel-body">
 
-				<div class="entry">
-				<br>
-				<div class="entry-title"><h3>Input Data Dua Variabel Tak Berpasangan</h3></div><br>
-			
-		<form method="post" action="2data2.php"> 
+		<form method="post" action="/m/2data2.php">
 		<table>
 			<tr><td>
 		Masukkan Nama Tabel</td>
@@ -15,7 +23,12 @@
 			<br>
 		NB : Nama tabel harus yang belum ada atau yang belum tersimpan di aplikasi ini, untuk melihat daftar nama tabel yang sudah ada klik pilihan "Lihat data" pada menu "Data"
 
-			<br>
-		</div>
 
+		</div>
+	</div>
+	<?php }else{ ?>
+		<?php include('auth/login.php');?>
+	<?php } ?>
+</div>
+</body>
 

@@ -1,9 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-				<div class="entry">
-				<br>
-				<div class="entry-title">Input 2 Sampel</div><br>
-			<form method='post' action='2insert_data2.php'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<?php include('common/header.php') ?>
+</head>
+<body>
+<div class="container">
+	<?php if(isset($_SESSION['login'])){ ?>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			Input 2 Sampel
+		</div>
+		<div class="panel-body">
+			<form method='post' action='/m/2insert_data2.php'>
 		<?php
 	$nama = $_POST['nama'];		
 	$n1 = $_POST['n1']; 
@@ -24,7 +32,10 @@
 	echo "<input type='hidden' name='n2' value='".$n2."' />";
 	echo "<input type='hidden' name='nama' value='".$nama."' />";
 	echo "<input type='submit' name='submit' value='Simpan data' />";	?></form>
-			<br>
-			<br>
-			</div>
-</html>
+		</div>
+	</div>
+	<?php }else{ ?>
+		<?php include('auth/login.php');?>
+	<?php } ?>
+</div>
+</body>
